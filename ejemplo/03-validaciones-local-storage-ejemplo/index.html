@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Introducción a Boostrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid border">
+      <h1>Grid Flexbox</h1>
+      <div class="row">
+        <div class="col border">1</div>
+        <div class="col border">2</div>
+        <div class="col border">3</div>
+        <div class="col border">4</div>
+        <div class="col border">5</div>
+        <div class="col border">6</div>
+        <div class="col border">7</div>
+        <div class="col border">8</div>
+        <div class="col border">9</div>
+        <div class="col border">10</div>
+        <div class="col border">11</div>
+        <div class="col border">12</div>
+      </div>
+      <div class="row">
+        <div class="col border">1</div>
+        <div class="col border">2</div>
+        <div class="col border">3</div>
+      </div>
+      <div class="row">
+        <div class="col-4 border">1</div>
+        <div class="col-8 border">2</div>
+      </div>
+      <div class="row">
+        <div class="col-4 border">1</div>
+      </div>
+
+      <!-- Combinando dimensiones-->
+      <h1>Combinando Dimensiones</h1>
+      <div class="row">
+        <div class="col-12 col-md-4 border">A</div>
+        <div class="col-12 col-md-4 border">B</div>
+        <div class="col-12 col-md-4 border">C</div>
+      </div>
+      <!-- Alineación Vertical -->
+      <h1>Alineación Vertical</h1>
+      <div class="row align-items-start border" style="height: 100px">
+        <div class="col border">UNO</div>
+        <div class="col border">DOS</div>
+        <div class="col border">TRES</div>
+      </div>
+      <div class="row align-items-center border" style="height: 100px">
+        <div class="col border">UNO</div>
+        <div class="col border">DOS</div>
+        <div class="col border">TRES</div>
+      </div>
+      <div class="row align-items-end border" style="height: 100px">
+        <div class="col border">UNO</div>
+        <div class="col border">DOS</div>
+        <div class="col border">TRES</div>
+      </div>
+      <!-- Alineación Vertical (columnas) -->
+      <h1>Alineación Vertical (columnas)</h1>
+      <div class="row border" style="height: 100px">
+        <div class="col align-self-start border">UNO</div>
+        <div class="col align-self-center border">DOS</div>
+        <div class="col align-self-end border">TRES</div>
+      </div>
+      <!-- Alineación horizontal -->
+      <h1>Alineación horizontal</h1>
+      <div class="row justify-content-start border">
+        <div class="col-4 border">A</div>
+        <div class="col-4 border">B</div>
+      </div>
+      <div class="row justify-content-center border">
+        <div class="col-4 border">A</div>
+        <div class="col-4 border">B</div>
+      </div>
+      <div class="row justify-content-end border">
+        <div class="col-4 border">A</div>
+        <div class="col-4 border">B</div>
+      </div>
+      <div class="row justify-content-around border">
+        <div class="col-4 border">A</div>
+        <div class="col-4 border">B</div>
+      </div>
+      <div class="row justify-content-between border">
+        <div class="col-4 border">A</div>
+        <div class="col-4 border">B</div>
+      </div>
+      <!-- Tablas -->
+      <h1>Tablas</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Correo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Juan Pérez</td>
+                <td>juan.perez@gmail.com</td>
+              </tr>
+              <tr>
+                <td>Pedro Ramírez</td>
+                <td>pedro@gmail.com</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--Botones -->
+      <h1>Botones</h1>
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <button type="button" class="btn">Básicp</button>
+          <button type="button" class="btn btn-primary btn-lg">Primary</button>
+          <button type="button" class="btn btn-secondary btn-md">
+            Secondary
+          </button>
+          <button type="button" class="btn btn-warning btn-sm">Warning</button>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-2 text-center">
+          <button type="button" class="btn btn-success">Normal</button>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-2 text-center">
+          <button type="button" class="btn btn-success btn-block">
+            Block
+          </button>
+        </div>
+      </div>
+      <!-- Formularios -->
+      <h1>Formularios</h1>
+      <div class="row justify-content-center">
+        <div class="col-md-2">
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombre"
+                placeholder="Juan Pérez"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="juan.perez@gmail.com"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
